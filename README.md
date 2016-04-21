@@ -1,1 +1,1 @@
-#Home of [stephenmoy.com](https://stephenmoy.com )
+#Home of [stephenmoy.com](http://stephenmoy.com )
