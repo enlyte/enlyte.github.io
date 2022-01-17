@@ -2745,7 +2745,8 @@ input, select, textarea {
 
 			.main .container:before {
 				min-height: calc( 100vh - 13em);
-				content: '';
+				content: '';   
+				/*customeditmoy */
 				display: inline-block;
 				vertical-align: middle;
 				width: 1px;
