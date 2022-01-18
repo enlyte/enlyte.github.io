@@ -77,34 +77,35 @@
 							<h2>What I do</h2>
 						</header>
 						<p>Here are a few things you can find me doing with my time and energy</p>
-						<ul class="icons-grid">
-							<li>
+						<ul class="icons-grid clickLink">
+
+							<li onclick="document.getElementById('id01').style.display='block'">
 								<span class="icon solid major fa-camera"></span>
 								<h3>Photo/Videography</h3>
 							</li>
 
-							<li onclick="document.getElementById('id01').style.display='block'">
+							<li onclick="document.getElementById('id02').style.display='block'">
 
 
 								<span class="icon solid major fa-code"></span>
 								<h3>Coding</h3>
 							</li>
 
-							<li>
+							<li onclick="document.getElementById('id03').style.display='block'">
 								<span class="icon solid major fa-basketball-ball"></span>
 								<h3>Basketball</h3>
 							</li>
-							<li>
+							<li onclick="document.getElementById('id04').style.display='block'">
 								<span class="icon solid major fa-dumbbell"></span>
 								<h3>Exercise</h3>
 							</li>
 
-							<li>
+							<li onclick="document.getElementById('id05').style.display='block'">
 								<span class="icon solid major fa-road"></span>
 								<h3>Traveling</h3>
 							</li>
 
-							<li>
+							<li onclick="document.getElementById('id06').style.display='block'">
 								<span class="icon solid major fa-hot-tub"></span>
 								<h3>Hot Tub Connoisseur</h3>
 							</li>
@@ -296,9 +297,10 @@ https://formspree.io/plans -->
 				<!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Login</button> -->
 
 			<div class="w3-container">
-				<!-- <h2>Login Modal</h2> -->
 
-				<div id="id01" class="w3-modal">
+
+										<!-- ///// Modal 1 Photography" -->
+			<div id="id01" class="w3-modal">
 					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
 						<div class="w3-center"><br>
@@ -311,16 +313,50 @@ https://formspree.io/plans -->
 
 								<section id="one" class="main special">
 					        <div class="container">
+			               <h2>Photography / Videography</h2>
+					            <p>For as long as I can remember, I've enjoyed taking photographs and making videos.  I've mainly kept it a hobby, while occasionally utilizing it as a business.  I currently shoot with a Canon EOS R6.  I have a few other cameras used primarily for capturing video, such as the Sony RX100v7 and the DJI Mavic Air 2.  I also enjoy the nostalgic feel of taking 'polaroids' using different Fujifilm cameras.</p>
+
+					            <header class="major">
+					              <h2>Pictures Coming Soon...</h2>
+					            </header>
+
+
+				          		<!-- <span class="image fit"><img src="images/misc/image.jpg" alt="" /></span> -->
+
+							        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button ">Close</button>
+					          </div>
+					        </div>
+					      </section>
+							</div>
+						</form>
+
+					</div>
+
+
+
+
+									<!-- ///// Modal 2 CODING \\\\\\\-->
+
+				<div id="id02" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+						<div class="w3-center"><br>
+							<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+						</div>
+
+						<form class="w3-container" action="/action_page.php">
+							<div class="w3-section">
+
+								<section id="one" class="main special">
+					        <div class="container">
 					               <h2>Coding and Software Development</h2>
-					            <p>I've worked on numerous coding and software development projects, both at work and independently.  I've learned and utilized multiple different languages over the years.  The languages I've spent the most time working with are Objective-C, Swift, JavaScript, and Python. </p>
+							            <p>I've worked on numerous coding and software development projects, both at work and independently.  I've learned and utilized multiple different languages over the years.  The languages I've spent the most time working with are Objective-C, Swift, JavaScript, Python, and Solidity. </p>
 
-					               <p>
-					                    I've built and worked on webapps, websites, iOS apps, games, and I've also worked on projects within the blockchain.
-
-					                    </p>
-					            <p>
-					                 I've taken my apps down from the app store because I've moved on to other projects and can no longer support them.
-					                 </p>
+						               <p>I've built and worked on webapps, websites, iOS apps, games, and I've also worked on projects within the blockchain.  I built this website, with most of the design credit going to
+														<a href="http://html5up.net/"><span class="label">html5up</span></a>
+													 </p>
+							            <p>I've taken my apps down from the app store because I've moved on to other projects and can no longer support them.</p>
 
 					            <header class="major">
 					              <h2>Nulite</h2>
@@ -331,32 +367,152 @@ https://formspree.io/plans -->
 					          <span class="image fit"><img src="images/misc/nuliteDevice.png" alt="" /></span>
 					          <div class="content">
 
-
 					               <header class="major">
 					                <h2>Jib</h2>
 					               </header>
 					               <p>Jib is a graphic design social network and messenger app in one.  Users could create and edit images and graphics, adjusting text with colors and fonts, while also sending messages with unique styles and inline graphics. </p>
 
 					               <span class="image fit"><img src="images/misc/JibAppStore.png" alt="" /></span>
-
-												 <!-- <div class="w3-container w3-border-top w3-padding-16 w3-light-grey"> -->
-									        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button ">Close</button>
-
-									      <!-- </div> -->
+									        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button ">Close</button>
 					          </div>
 					        </div>
-
 					      </section>
-
 							</div>
 						</form>
+
+							</div>
 
 						<!-- <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
 						</div> -->
 
 					</div>
-				</div>
-			</div>
+
+
+												<!-- ///// Modal 3 Basketball" -->
+						<div id="id03" class="w3-modal">
+							<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+								<div class="w3-center"><br>
+									<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+								</div>
+
+								<form class="w3-container" action="/action_page.php">
+									<div class="w3-section">
+
+										<section id="one" class="main special">
+											<div class="container">
+												 <h2>Basketball</h2>
+													<p>Basketball has been a major part of my upbringing.  From Moy family cookouts, competing with my brothers, cousins, uncles, friends, and everyone inbetween, we've played a lot of basketball as a family.  We still play on occasion, and are just as competitive.</p>
+
+													<!-- <header class="major">
+														<h2>Pictures Coming Soon...</h2>
+													</header> -->
+
+
+													<!-- <span class="image fit"><img src="images/misc/image.jpg" alt="" /></span> -->
+
+													<button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button ">Close</button>
+												</div>
+											</div>
+										</section>
+									</div>
+								</form>
+
+							</div>
+
+
+
+								<!-- ///// Modal 4 Exercise" -->
+				<div id="id04" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+						<div class="w3-center"><br>
+							<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+						</div>
+							<form class="w3-container" action="/action_page.php">
+								<div class="w3-section">
+									<section id="one" class="main special">
+										<div class="container">
+											 <h2>Exercise</h2>
+												<p>Body movement is such a fundamental aspect of living a healthy life.  Our bodies are designed for movement, and in order to feel good, and continue growing, exercise is an essential part of my life.  I enjoy lifting weights, playing sports, going for walks, hikes, and a number of outdoor activities.</p>
+
+												<!-- <header class="major">
+													<h2>Pictures Coming Soon...</h2>
+												</header> -->
+												<!-- <span class="image fit"><img src="images/misc/image.jpg" alt="" /></span> -->
+
+												<button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button ">Close</button>
+											</div>
+										</div>
+									</section>
+								</div>
+							</form>
+						</div>
+
+
+								<!-- ///// Modal 5 Exercise" -->
+				<div id="id05" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+						<div class="w3-center"><br>
+							<span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+						</div>
+							<form class="w3-container" action="/action_page.php">
+								<div class="w3-section">
+									<section id="one" class="main special">
+										<div class="container">
+											 <h2>Traveling</h2>
+												<p>This world has an endless abundance of possibilities, from places we can go, to people we can meet, and memories we can create.  Traveling on any level is a vehicle for new experience, and for opportunies to continue to learn and grow.  I enjoy exploring internationally, as well as within the States.  The US has so much to explore, and is much more accessible.  The South West is my favorite part of this Country.</p>
+
+												<!-- <header class="major">
+													<h2>Pictures Coming Soon...</h2>
+												</header> -->
+												<!-- <span class="image fit"><img src="images/misc/image.jpg" alt="" /></span> -->
+
+												<button onclick="document.getElementById('id05').style.display='none'" type="button" class="w3-button ">Close</button>
+											</div>
+										</div>
+									</section>
+								</div>
+							</form>
+						</div>
+
+
+								<!-- ///// Modal 6 Exercise" -->
+				<div id="id06" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+						<div class="w3-center"><br>
+							<span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+						</div>
+							<form class="w3-container" action="/action_page.php">
+								<div class="w3-section">
+									<section id="one" class="main special">
+										<div class="container">
+											 <h2>Hot Tubs</h2>
+												<p>I really enjoy spending time in a hot tub after a long day of travel, a workout, or just to relax. That is all.  Let me know if you have any recommendations!</p>
+
+												<!-- <header class="major">
+													<h2>Pictures Coming Soon...</h2>
+												</header> -->
+												<!-- <span class="image fit"><img src="images/misc/image.jpg" alt="" /></span> -->
+
+												<button onclick="document.getElementById('id06').style.display='none'" type="button" class="w3-button ">Close</button>
+											</div>
+										</div>
+									</section>
+								</div>
+							</form>
+						</div>
+
+
+
+
+			</div>   <!--  End Modals -->
 
 
 	</body>
