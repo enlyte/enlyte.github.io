@@ -17,11 +17,15 @@
 		</script>
 		<!-- G-4VH709Q7GZ -->
 
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 		<title>Steve Moy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
+			<!-- Link Image -->
 		<meta property="og:image" content="images/pic01.jpg">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="1024">
@@ -32,6 +36,7 @@
 
 		<!-- Header -->
 			<section id="header">
+
 				<header class="major">
 					<h1>Stephen Moy</h1>
 					<p> A little about me
@@ -48,7 +53,7 @@
 		<!-- One -->
 			<section id="one" class="main special">
 				<div class="container">
-					<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
+					<span class="image fit "><img src="images/pic01.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
 							<h2>Who I am</h2>
@@ -66,7 +71,7 @@
 		<!-- Two -->
 			<section id="two" class="main special">
 				<div class="container">
-					<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit "><img src="images/pic02.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
 							<h2>What I do</h2>
@@ -78,7 +83,9 @@
 								<h3>Photo/Videography</h3>
 							</li>
 
-							<li>
+							<li onclick="document.getElementById('id01').style.display='block'">
+
+
 								<span class="icon solid major fa-code"></span>
 								<h3>Coding</h3>
 							</li>
@@ -127,7 +134,7 @@
 			<!-- Get in Touch -->
 				<section id="three" class="main special">
 					<div class="container">
-						<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
+						<span class="image fit "><img src="images/pic03.jpg" alt="" /></span>
 						<div class="content">
 
 							<header class="major">
@@ -174,9 +181,11 @@
 
 		<!-- Three -->
 		 <section id="footer" class="main special" >
+
+
 			<!-- <section id="four" class="main special"> -->
 				<div class="container">
-					<span class="image fit primary"><img src="images/pic04.jpg" alt="" /></span>
+					<span class="image fit "><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
 							<h2>One more thing</h2>
@@ -279,10 +288,79 @@ https://formspree.io/plans -->
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+
+
+
+
+
+				<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Login</button>
+
+			<div class="w3-container">
+				<!-- <h2>Login Modal</h2> -->
+
+				<div id="id01" class="w3-modal">
+					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+						<div class="w3-center"><br>
+							<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+
+						</div>
+
+						<form class="w3-container" action="/action_page.php">
+							<div class="w3-section">
+
+								<section id="one" class="main special">
+					        <div class="container">
+					               <h2>Coding and Software Development</h2>
+					            <p>I've worked on numerous coding and software development projects, both at work and independently.  I've learned and utilized multiple different languages over the years.  The languages I've spent the most time working with are Objective-C, Swift, JavaScript, and Python. </p>
+
+					               <p>
+					                    I've built and worked on webapps, websites, iOS apps, games, and I've also worked on projects within the blockchain.
+
+					                    </p>
+					            <p>
+					                 I've taken my apps down from the app store because I've moved on to other projects and can no longer support them.
+					                 </p>
+
+					            <header class="major">
+					              <h2>Nulite</h2>
+					            </header>
+					            <p>Nulite Behavior Tracker is an iOS App that I built and launched independently and from scratch.  It's an applicaiton designed to make behavioral data tracking easier for parents, teachers, and care takers of people and students with special needs </p>
+
+					          <span class="image fit"><img src="images/misc/nulitelogo.jpg" alt="" /></span>
+					          <span class="image fit"><img src="images/misc/nuliteDevice.png" alt="" /></span>
+					          <div class="content">
+
+
+					               <header class="major">
+					                <h2>Jib</h2>
+					               </header>
+					               <p>Jib is a graphic design social network and messenger app in one.  Users could create and edit images and graphics, adjusting text with colors and fonts, while also sending messages with unique styles and inline graphics. </p>
+
+					               <span class="image fit"><img src="images/misc/jibAppStore.png" alt="" /></span>
+
+												 <!-- <div class="w3-container w3-border-top w3-padding-16 w3-light-grey"> -->
+									        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button ">Close</button>
+
+									      <!-- </div> -->
+					          </div>
+					        </div>
+
+					      </section>
+
+							</div>
+						</form>
+
+						<!-- <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+
+
 	</body>
 </html>
-
-
 
 
 

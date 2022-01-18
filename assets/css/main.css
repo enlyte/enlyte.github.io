@@ -259,6 +259,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
+		/* // Adjust Moy */
 		width: 35em;
 	}
 
@@ -2745,9 +2746,9 @@ input, select, textarea {
 
 			.main .container:before {
 				min-height: calc( 100vh - 13em);
-				content: '';   
-				/*customeditmoy */
-				display: inline-block;
+				content: '';
+				/*customeditmoy moy adjustment*/
+				/* display: inline-block; */
 				vertical-align: middle;
 				width: 1px;
 			}
@@ -2840,6 +2841,7 @@ input, select, textarea {
 		#header .container {
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
+			/* // Moy Adjust */
 			left: 50%;
 			margin-left: -17.5em;
 			padding: 2.5em;
