@@ -19,18 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 
-# layout: post 
-# title: "Steve Moy Show" 
-# date: Publishing date and time 
-# file: /episodes/001-SteveMoyShow.mp3 
-# summary: "Quick Summary" 
-# # description: "Longer information Config" 
-# duration: "1:20:30" 
-# length: "in seconds" 
-# explicit: "do we swear" 
-# keywords: "keyword tags" 
-# block: "hold back publishing it" 
-# voices: "who did the talking"
+
 
 
 title: Steve Moy Show
@@ -39,8 +28,14 @@ author: Stephen Moy
 description: >- # this means to ignore newlines until "baseurl:"
   In these episodes, I have conversations about life, 
   relationships, and common interests
-baseurl: "podcast" # the subpath of your site, e.g. /blog
-url: "https://stephenmoy.com" # the base hostname & protocol for your site, e.g. http://example.com
+subtitle: "A discussion from the intersection of life & technology."
+
+lang: en-us
+author: Stephen Moy
+copyright: "&#xA9; 2023"
+
+# baseurl: "podcast" # the subpath of your site, e.g. /blog
+# url: "https://stephenmoy.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # email: info@stephenmoy.com
 twitter_username: stevemoy
@@ -51,6 +46,23 @@ github_username: enlyte
 theme: minima
 plugins:
   - jekyll-feed
+
+
+
+# permalink: /:year/:title.html
+
+#Timezone
+timezone: America/New_York
+# timezone: Australia/Sydney
+
+#Setup for Pages
+# include: ['_pages']
+
+# Build settings
+# markdown: kramdown
+
+#Exclude local build settings
+# exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
 
 # Exclude from processing.
 # The following items will not be processed, by default.
