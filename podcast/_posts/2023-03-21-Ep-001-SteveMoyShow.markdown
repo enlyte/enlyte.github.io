@@ -4,7 +4,7 @@
 # date:   2023-03-21 15:13:38 -0700
 # categories: podcast episodes
 
-layout: post 
+layout: post
 title: "Ep 001 - Convo with Cissy" 
 date: 2023-03-21 18:13:38 -0700
 file: /episodes/Ep-001-SteveMoyShow.mp3 
@@ -19,7 +19,25 @@ voices: "Stephen Moy and Christine White"
 ---
 
 
+<!-- <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} Default</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head> -->
+  <body>
+    <h1>{{ page.summary }}</h1>
+    <p>{{ page.description }}</p>
+    <section>
+      <!-- {{ content }} -->
+      <!-- [jekyll](https://github.com/jekyll/jekyll) -->
+      Subscribe [via RSS:] https://stephenmoy.com/podcast/stevemoyshow.xml
+    </section>
+    <footer>
+      &copy; Steve Moy Show 2023
+    </footer>
+  </body>
 
+   Subscribe [via RSS:](https://stephenmoy.com/podcast/stevemoyshow.xml)
 
 
 <!-- 
