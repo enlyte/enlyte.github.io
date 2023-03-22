@@ -3,13 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-# layout: default
+layout: default
 ---
 
 <p>Welcome to <strong>Steve Moy Show</strong>, a place to have open and honest discussions about all different topics! I'd always appreciate your feedback and you can get in touch with us on <a href="mailto:info.stephenmoy@gmail.com?subject=I found your website and wanted to say hi!">email</a> or on <a href="http://twitter.com/stevemoy1">twitter</a>!</p>
 
 <div class="card-grid">
-<!--     -->
+<!--   download="{{ first_post.title }}">Download Now</a>      -->
     
     {% assign first_post = site.posts.first %}
     <div class="cards first">
@@ -22,7 +22,7 @@ layout: home
                 <p>{{ first_post.summary }} </p> 
             </div>
             <div class="four columns center-content">
-                <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Download Now</a>    
+                <a href="{{ first_post.file }}" class="button button-primary" 
             </div>
         </div>            
         </div>
