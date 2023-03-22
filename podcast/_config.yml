@@ -34,8 +34,7 @@ lang: en-us
 # copyright: "&#xA9; 2023"
 
 #Exclude local build settings
-exclude: ['readme.md', 'Gemfile.lock']
-#, 'Gemfile']
+exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
 
 baseurl: "/podcast" # the subpath of your site, e.g. /blog
 # url: "https://stephenmoy.com" # the base hostname & protocol for your site, e.g. http://example.com
