@@ -5,17 +5,17 @@
 # categories: podcast episodes
 
 layout: post 
-title: "Steve Moy Show" 
-date: 2023-03-21 15:13:38 -0700
-file: /episodes/001-SteveMoyShow.mp3 
+title: "Ep 001 - Convo with Cissy" 
+date: 2023-03-21 18:13:38 -0700
+file: /episodes/Ep-001-SteveMoyShow.mp3 
 summary: "Quick Summary"
-description: "Longer information" 
-duration: "1:20:30" 
-length: "in seconds" 
-explicit: "do we swear" 
-keywords: "keyword tags" 
-block: "hold back publishing it" 
-voices: "who did the talking"
+description: "My cousin and I got together to have an open-ended conversation about various topics.  We talk about the role she played in my life, our family, and the lasting impact of a traumatic childhood, amongst various other topics.  We both agreed that the trust we have in each other is rare and valuable. This conversation reminded us of the value of having someone to rely on during times of vulnerability." 
+duration: "1:20:31" 
+length: "4831" 
+explicit: "no" 
+keywords: "steve moy family christine white relationship trust healing support trauma" 
+block: "" 
+voices: "Stephen Moy and Christine White"
 ---
 
 
