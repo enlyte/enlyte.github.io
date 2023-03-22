@@ -33,8 +33,10 @@ lang: en-us
 # author: Stephen Moy
 # copyright: "&#xA9; 2023"
 baseurl: "podcast" # the subpath of your site, e.g. /blog
-url: "https://stephenmoy.com" # the base hostname & protocol for your site, e.g. http://example.com
-# email: info@stephenmoy.com
+# url: "https://stephenmoy.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://enlyte.github.io"
+
+email: info@stephenmoy.com
 twitter_username: stevemoy
 instagram_username: therealstevemoy
 github_username: enlyte
