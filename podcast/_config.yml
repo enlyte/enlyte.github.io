@@ -18,16 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+
+layout: post 
+title: "Steve Moy Show" 
+date: Publishing date and time 
+file: /episodes/001-SteveMoyShow.mp3 
+summary: "Quick Summary" 
+# description: "Longer information Config" 
+duration: "1:20:30" 
+length: "in seconds" 
+explicit: "do we swear" 
+keywords: "keyword tags" 
+block: "hold back publishing it" 
+voices: "who did the talking"
+
+
+# title: Steve Moy Show
+email: info@stephenmoy.com
+author: Stephen Moy
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  In these episodes, I have conversations about life, 
+  relationships, and common interests
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# email: info@stephenmoy.com
+twitter_username: stevemoy
+instagram_username: therealstevemoy
+github_username: enlyte
 
 # Build settings
 theme: minima
