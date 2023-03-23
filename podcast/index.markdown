@@ -4,6 +4,7 @@
 
 layout: home
 layout: default
+permalink: /podcast/
 ---
 
 <p>Welcome to <strong>Steve Moy Show</strong>, a place to have open and honest discussions about all different topics! I'd always appreciate your feedback and you can get in touch with us on <a href="mailto:info.stephenmoy@gmail.com?subject=I found your website and wanted to say hi!">email</a> or on <a href="http://twitter.com/stevemoy1">twitter</a>!</p>
