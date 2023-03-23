@@ -19,7 +19,7 @@
 			<itunes:name>{{ site.author }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/stevemoyshow.png" />
+        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/SteveMoyShow-x3.png" />
 		<itunes:category text="Society &amp; Culture"> 
             <itunes:category text="Relationships" />
         </itunes:category>
