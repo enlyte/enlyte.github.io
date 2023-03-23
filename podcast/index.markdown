@@ -50,6 +50,8 @@ permalink: /podcast/
   
   [Listen on Apple (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
+  ![Video Picture](https://stephenmoy.com/podcast/images/Episode-001.png  "First Episode")
+
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
