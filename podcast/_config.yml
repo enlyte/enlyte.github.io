@@ -25,9 +25,11 @@
 title: Steve Moy Show
 email: info@stephenmoy.com
 author: Stephen Moy
-# description: >- # this means to ignore newlines until "baseurl:"
-#   In these episodes, I have conversations about life, 
-#   relationships, and common interests
+# description: >- # "On this channel, I engage in thought-provoking and candid conversations with loved ones, friends, and interesting people about life, relationships, and personal challenges. This show is a place where we explore and share our experiences, perspectives, and insights on various topics that affect us as individuals and as a community.  
+
+# From heartwarming stories of triumph and resilience to vulnerable discussions on mental health, this podcast aims to inspire and empower listeners through authentic and relatable conversations. I believe that by sharing our stories and learning from each other, we can grow, heal, and build stronger relationships.  
+
+# So join us on this journey as we dive deep into the complexities of life and navigate through its ups and downs together. Whether you're looking for guidance, connection, or simply a good listen, this show has something for everyone."
 subtitle: "Conversations about life and relationships"
 lang: en-us
 # author: Stephen Moy
