@@ -22,9 +22,10 @@ permalink: /podcast/
                 <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
                 <p>{{ first_post.summary }} </p> 
             </div>
-            <div class="four columns center-content">
+  <!--           <div class="four columns center-content">
                 <a href="{{ first_post.file }}" class="button button-primary" 
-            </div>
+            </div> -->
+
         </div>            
         </div>
     
@@ -42,6 +43,13 @@ permalink: /podcast/
 
 <div class="container center-content extra-padding">
 </div>
+
+
+  [Watch on Spotify](https://open.spotify.com/show/3s3iApXZ8qaWRiijJ3BQE9)
+
+  [Watch on Youtube](https://youtu.be/tgvEX-pH8wI)
+  
+  [Listen on Apple (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

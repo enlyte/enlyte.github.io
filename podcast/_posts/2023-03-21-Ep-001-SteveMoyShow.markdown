@@ -19,23 +19,31 @@ voices: "Stephen Moy and Christine White"
 ---
 
 
-<!-- <head>
+<head>
     <meta charset="utf-8">
     <title>{{ page.title }} Default</title>
     <link rel="stylesheet" href="/css/style.css">
-  </head> -->
+  </head>
   <body>
     <h1>{{ page.summary }}</h1>
     <p>{{ page.description }}</p>
     <section>
       <!-- {{ content }} -->
       <!-- [jekyll](https://github.com/jekyll/jekyll) -->
-      Subscribe [via RSS:] https://stephenmoy.com/podcast/stevemoyshow.xml
+      <p>
+      </p>
+      <!-- Subscribe [via RSS:] https://stephenmoy.com/podcast/stevemoyshow.xml -->
     </section>
     <footer>
-      &copy; Steve Moy Show 2023
+      Steve Moy Show 2023 &copy; 
     </footer>
   </body>
+
+  [Watch on Spotify](https://open.spotify.com/show/3s3iApXZ8qaWRiijJ3BQE9)
+
+  [Watch onYoutube](https://youtu.be/tgvEX-pH8wI)
+  
+  [Listen on Apple (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
    Subscribe [via RSS:](https://stephenmoy.com/podcast/stevemoyshow.xml)
 
