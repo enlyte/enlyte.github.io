@@ -38,7 +38,7 @@ exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
 baseurl: ""
 # baseurl: "/podcast" # the subpath of your site, e.g. /blog
 url: "https://stephenmoy.com/podcast" # the base hostname & protocol for your site, e.g. http://example.com
-# url: "https://enlyte.github.io"
+permaurl: "https://stephenmoy.com"
 
 email: info@stephenmoy.com
 twitter_username: stevemoy
