@@ -17,7 +17,7 @@ permalink: /podcast/
     
     {% assign first_post = site.posts.first %}
     <div class="cards first">
-        <h1 class="label reversed">Latest Episode</h1>
+        <!-- <h1 class="label reversed">Latest Episode</h1> -->
         <div class="center-content">
             <div class="seven columns">
                 <h2>
