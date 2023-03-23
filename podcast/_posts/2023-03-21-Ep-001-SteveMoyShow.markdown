@@ -41,11 +41,11 @@ voices: "Stephen Moy and Christine White"
 
   [Watch on Spotify](https://open.spotify.com/show/3s3iApXZ8qaWRiijJ3BQE9)
 
-  [Watch onYoutube](https://youtu.be/tgvEX-pH8wI)
+  [Watch on Youtube](https://youtu.be/tgvEX-pH8wI)
   
   [Listen on Apple Podcasts (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
-   Subscribe [via RSS:](https://stephenmoy.com/podcast/stevemoyshow.xml)
+  Subscribe [via RSS:](https://stephenmoy.com/podcast/stevemoyshow.xml)
 
 
 <!-- 

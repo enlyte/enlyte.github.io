@@ -22,6 +22,11 @@
 
 
 
+
+
+
+
+
 title: Steve Moy Show
 email: info@stephenmoy.com
 author: Stephen Moy
@@ -38,8 +43,10 @@ lang: en-us
 #Exclude local build settings
 exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
 baseurl: ""
+# permaurl: "https://stephenmoy.com"
+
 # baseurl: "/podcast" # the subpath of your site, e.g. /blog
-# url: "https://stephenmoy.com/podcast" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://stephenmoy.com/podcast" # the base hostname & protocol for your site, e.g. http://example.com
 # permaurl: "https://stephenmoy.com"
 
 email: info@stephenmoy.com
@@ -50,6 +57,16 @@ instagram_username: therealstevemoy
 theme: minima
 plugins:
   - jekyll-feed
+
+
+
+
+
+
+
+
+
+
 # timezone: America/New_York
 # markdown: kramdown
 

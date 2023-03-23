@@ -11,6 +11,9 @@ permalink: /podcast/
 
 <div class="card-grid">
 <!--   download="{{ first_post.title }}">Download Now</a>      -->
+  <!--           <div class="four columns center-content">
+                <a href="{{ first_post.file }}" class="button button-primary" 
+            </div> -->
     
     {% assign first_post = site.posts.first %}
     <div class="cards first">
@@ -26,9 +29,6 @@ permalink: /podcast/
                 <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
                 <p>{{ first_post.summary }} </p> 
             </div>
-  <!--           <div class="four columns center-content">
-                <a href="{{ first_post.file }}" class="button button-primary" 
-            </div> -->
         </div>            
         </div>
     
@@ -49,13 +49,13 @@ permalink: /podcast/
 
 
   [Watch on Spotify](https://open.spotify.com/show/3s3iApXZ8qaWRiijJ3BQE9)
-  
+
 
   [Watch on Youtube](https://youtu.be/tgvEX-pH8wI)
   
   [Listen on Apple (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
-  ![Video Picture](https://stephenmoy.com/podcast/images/Episode-001.png  "First Episode")
+  ![Video Picture](https://stephenmoy.com/podcast/images/Episode-001.png "First Episode")
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
