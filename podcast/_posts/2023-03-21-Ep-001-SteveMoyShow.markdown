@@ -7,7 +7,7 @@
 layout: posts
 title: "Ep 001 - Conversation with Cissy" 
 date: 2023-03-21 18:13:38 -0700
-file: /episodes/Ep-001-SteveMoyShow.mp3 
+file: https://stephenmoy.com/podcast/episodes/Ep-001-SteveMoyShow.mp3 
 summary: "First Episode! A deep convo with my cousin Cissy "
 description: "My cousin and I got together to have an open-ended conversation about various topics.  We talk about the role she played in my life, our family, and the lasting impact of a traumatic childhood, amongst various other topics.  We both agreed that the trust we have in each other is rare and valuable. This conversation reminded us of the value of having someone to rely on during times of vulnerability." 
 duration: "1:20:31" 
@@ -43,7 +43,7 @@ voices: "Stephen Moy and Christine White"
 
   [Watch onYoutube](https://youtu.be/tgvEX-pH8wI)
   
-  [Listen on Apple (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
+  [Listen on Apple Podcasts (Audio)](https://podcasts.apple.com/us/podcast/steve-moy-show/id1678431358)
 
    Subscribe [via RSS:](https://stephenmoy.com/podcast/stevemoyshow.xml)
 
