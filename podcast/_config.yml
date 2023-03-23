@@ -43,9 +43,9 @@ baseurl: ""
 # permaurl: "https://stephenmoy.com"
 
 email: info@stephenmoy.com
-twitter_username: stevemoy
+twitter_username: stevemoy1
 instagram_username: therealstevemoy
-github_username: enlyte
+# github_username: enlyte
 # Build settings
 theme: minima
 plugins:

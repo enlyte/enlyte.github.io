@@ -17,7 +17,11 @@ permalink: /podcast/
         <h1 class="label reversed">Latest Episode</h1>
         <div class="center-content">
             <div class="seven columns">
-                <h2><a class="post-link" href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a></h2>
+                <h2>
+                <!-- <a class="post-link" href="{{ first_post.url | prepend: site.baseurl }}"> -->
+                {{ first_post.title }}
+                <!-- </a> -->
+                </h2>
                 
                 <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
                 <p>{{ first_post.summary }} </p> 
@@ -45,6 +49,7 @@ permalink: /podcast/
 
 
   [Watch on Spotify](https://open.spotify.com/show/3s3iApXZ8qaWRiijJ3BQE9)
+  
 
   [Watch on Youtube](https://youtu.be/tgvEX-pH8wI)
   
