@@ -7,6 +7,60 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem;
+  border-radius: 5px;
+  object-fit: cover;
+}*/
+
+.imgportrait2 {
+	max-width: 30%;
+}
+
+@media (min-width: 768px) {
+  /* adjust max-width for larger screens */
+  .image-container img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* adjust max-width for even larger screens */
+  .image-container img {
+    max-width: 400px;
+  }
+}
+/*.image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;      
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 200px;
+      margin: 1rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+      .image-container img {
+        max-width: 150px;
+      }
+
+      */
 
 .clickLink :hover
 {
