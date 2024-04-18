@@ -1,62 +1,62 @@
-name: Deploy Jekyll Site with Custom Configuration
+# name: Deploy Jekyll Site with Custom Configuration
 
-on:
-  push:
-    branches: ["master"]
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: ["master"]
+#   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
 
-jobs:
-  build-root:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build main site (excluding podcast)
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: /
-          destination: ./_site
-          config: './_config.yml'
-      - name: Upload artifact for main site
-        uses: actions/upload-pages-artifact@v4
+# jobs:
+#   build-root:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+#       - name: Setup Pages
+#         uses: actions/configure-pages@v3
+#       - name: Build main site (excluding podcast)
+#         uses: actions/jekyll-build-pages@v1
+#         with:
+#           source: /
+#           destination: ./_site
+#           config: './_config.yml'
+#       - name: Upload artifact for main site
+#         uses: actions/upload-pages-artifact@v4
 
-  build-podcast:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build podcast site
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: /podcast
-          destination: ./_site/podcast
-          config: './podcast/_config.yml'
-      - name: Upload artifact for podcast
-        uses: actions/upload-pages-artifact@v4
+#   build-podcast:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+#       - name: Setup Pages
+#         uses: actions/configure-pages@v3
+#       - name: Build podcast site
+#         uses: actions/jekyll-build-pages@v1
+#         with:
+#           source: /podcast
+#           destination: ./_site/podcast
+#           config: './podcast/_config.yml'
+#       - name: Upload artifact for podcast
+#         uses: actions/upload-pages-artifact@v4
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: [build-root, build-podcast]
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+#   deploy:
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+#     runs-on: ubuntu-latest
+#     needs: [build-root, build-podcast]
+#     steps:
+#       - name: Deploy to GitHub Pages
+#         id: deployment
+#         uses: actions/deploy-pages@v2
 
 
 
@@ -100,7 +100,7 @@ jobs:
           # destination: ./_site
           source: /podcast
           destination: ./_site/podcast
-          # config: './podcast/_config.yml'
+          config: './podcast/_config.yml'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
 
