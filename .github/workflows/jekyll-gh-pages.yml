@@ -102,7 +102,7 @@ jobs:
           destination: ./_site/podcast
           config: './podcast/_config.yml'
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
