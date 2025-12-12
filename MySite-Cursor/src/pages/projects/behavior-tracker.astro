@@ -1,0 +1,109 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { Section } from '../../components/ui/Section';
+import { ScrollReveal } from '../../components/animations/ScrollReveal';
+import { Card } from '../../components/ui/Card';
+import { Tag } from '../../components/ui/Tag';
+---
+
+<ProjectLayout 
+  title="Behavior Data Tracker - iOS App" 
+  description="Special-needs behavior tracking app for educational environments."
+>
+  <Section spacing="lg" id="behavior-tracker">
+    {/* Hero */}
+    <ScrollReveal>
+      <div className="max-w-4xl mb-16">
+        <h1 className="text-4xl md:text-section font-bold text-text-primary mb-4">
+          Behavior Data Tracker
+        </h1>
+        <p className="text-xl text-text-secondary mb-6">
+          iOS app for tracking behavior data in special-needs educational settings.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Tag variant="legacy">Mobile app</Tag>
+          <Tag variant="legacy">Legacy</Tag>
+          <Tag variant="legacy">UX for accessibility</Tag>
+          <Tag variant="legacy">Swift</Tag>
+          <Tag variant="legacy">iOS</Tag>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Context */}
+    <ScrollReveal delay={0.1}>
+      <Card className="mb-16">
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">Context</h2>
+        <p className="text-text-secondary mb-4">
+          Built for special-needs behavior tracking in educational environments. The app improved data capture
+          and analysis for staff working with students who require specialized support and documentation.
+        </p>
+        <p className="text-text-secondary">
+          This project demonstrated early product thinking and UX iteration based on real user feedback from
+          educational professionals.
+        </p>
+      </Card>
+    </ScrollReveal>
+
+    {/* Tech */}
+    <ScrollReveal delay={0.2}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Tech Stack</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Swift</h3>
+            <p className="text-text-secondary text-sm">Modern iOS development</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Objective-C</h3>
+            <p className="text-text-secondary text-sm">Legacy components and integrations</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">iOS Native</h3>
+            <p className="text-text-secondary text-sm">Native performance and UX</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Data Management</h3>
+            <p className="text-text-secondary text-sm">Core Data for local storage</p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Impact */}
+    <ScrollReveal delay={0.3}>
+      <Card className="mb-16">
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">Impact</h2>
+        <p className="text-text-secondary">
+          Used in educational environments to improve behavior data capture and analysis. The app helped staff
+          track patterns, generate reports, and make data-driven decisions for student support.
+        </p>
+      </Card>
+    </ScrollReveal>
+
+    {/* UI Mockups */}
+    <ScrollReveal delay={0.4}>
+      <div>
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">UI Mockups</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <div className="aspect-[9/16] bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Timeline view
+            </div>
+          </Card>
+          <Card>
+            <div className="aspect-[9/16] bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Behavior logs
+            </div>
+          </Card>
+          <Card>
+            <div className="aspect-[9/16] bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Charts & reports
+            </div>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+  </Section>
+</ProjectLayout>
+

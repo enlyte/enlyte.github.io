@@ -1,0 +1,93 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Base colors */
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #111111;
+    --color-bg-surface: #1a1a1a;
+    --color-bg-surface-light: #252525;
+    
+    /* Text colors */
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #888888;
+    --color-text-muted: #555555;
+    
+    /* Accent colors */
+    --color-accent-ai-media: #3b82f6;
+    --color-accent-ai-media-light: #60a5fa;
+    --color-accent-infrastructure: #06b6d4;
+    --color-accent-infrastructure-light: #22d3ee;
+    --color-accent-ux-product: #8b5cf6;
+    --color-accent-ux-product-light: #a78bfa;
+    --color-accent-legacy: #f59e0b;
+    --color-accent-legacy-light: #fbbf24;
+    --color-accent-personal: #10b981;
+    --color-accent-personal-light: #34d399;
+  }
+
+  html {
+    @apply bg-bg-primary text-text-primary;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary;
+    min-height: 100vh;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-text-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-text-secondary;
+  }
+}
+
+@layer components {
+  /* Container utility */
+  .container-custom {
+    @apply max-w-container mx-auto px-6 md:px-12;
+  }
+
+  /* Section spacing */
+  .section-spacing {
+    @apply py-20 md:py-section;
+  }
+
+  /* Focus styles for accessibility */
+  .focus-visible-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ai-media focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
+  }
+}
+

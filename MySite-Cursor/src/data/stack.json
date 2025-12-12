@@ -1,0 +1,16 @@
+{
+  "stack": [
+    { "name": "Python", "context": "Used in VidCutAI backend" },
+    { "name": "Flask", "context": "Backend services for VidCutAI and Pro Transcribe" },
+    { "name": "React", "context": "Frontend for Pro Transcribe" },
+    { "name": "Remix", "context": "Web framework for Pro Transcribe" },
+    { "name": "Tailwind", "context": "Styling for web applications" },
+    { "name": "Docker", "context": "Containerization for VidCutAI components" },
+    { "name": "Nginx", "context": "Reverse proxy and web server" },
+    { "name": "MongoDB", "context": "State management for VidCutAI" },
+    { "name": "FFmpeg", "context": "Media processing in VidCutAI" },
+    { "name": "PySide6", "context": "Desktop UI for VidCutAI" },
+    { "name": "pfSense", "context": "Homelab firewall and routing" }
+  ]
+}
+

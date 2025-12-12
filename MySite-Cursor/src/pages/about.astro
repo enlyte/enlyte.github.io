@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { TimelineSection } from '../components/sections/TimelineSection';
+---
+
+<BaseLayout title="About - Stephen Moy" description="My journey as a builder, from education tech to Technical Founder.">
+  <Section spacing="lg" id="about">
+    <ScrollReveal>
+      <h1 className="text-3xl md:text-section font-bold text-text-primary mb-8">
+        About
+      </h1>
+    </ScrollReveal>
+
+    <div className="max-w-3xl space-y-8">
+      <ScrollReveal>
+        <div className="prose prose-invert max-w-none">
+          <p className="text-lg text-text-secondary leading-relaxed">
+            My path as a builder has taken me from helping others use technology to building the tools themselves.
+            Starting in education technology, I learned how to translate complex systems into accessible experiences.
+            As an iOS developer, I built products that improved data capture in special-needs educational settings.
+            My time as a Sales Engineer taught me to bridge the gap between customer needs and technical solutions.
+          </p>
+          <p className="text-lg text-text-secondary leading-relaxed mt-4">
+            Today, as Technical Founder of VidCutAI, I combine systems thinking, product design, and infrastructure expertise
+            to build AI-powered media tools. I work across the full stack—from Python backends and React frontends to Docker
+            containers and homelab infrastructure—always with an eye toward solving real problems with elegant solutions.
+          </p>
+          <p className="text-lg text-text-secondary leading-relaxed mt-4">
+            Throughout my career, I've maintained a product-first mindset, continuously learning and adapting across domains:
+            education, accessibility, enterprise software, and now AI tools for media production.
+          </p>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.2}>
+        <div className="mt-16">
+          <h2 className="text-2xl md:text-subheading font-semibold text-text-primary mb-8">
+            Timeline
+          </h2>
+          <TimelineSection client:load />
+        </div>
+      </ScrollReveal>
+    </div>
+  </Section>
+</BaseLayout>
+

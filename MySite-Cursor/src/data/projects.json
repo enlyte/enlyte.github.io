@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": "vidcutai",
+      "name": "VidCutAI",
+      "role": "Founder / Lead Developer",
+      "summary": "AI-driven multicam podcast editor with client-side processing",
+      "description": "Automated multicam podcast editing using AI-powered speaker diarization and intelligent angle selection. Processes audio and video locally for privacy and speed, then exports to Final Cut Pro XML format.",
+      "stack": ["Python", "PySide6", "Flask", "Docker", "MongoDB", "FFmpeg"],
+      "tags": ["Desktop app", "AI/ML", "Media processing", "UX-heavy"],
+      "accentColor": "ai-media",
+      "slug": "/projects/vidcutai"
+    },
+    {
+      "id": "pro-transcribe",
+      "name": "Pro Transcribe",
+      "role": "Founder / Developer",
+      "summary": "Web-based transcription and diarization tool",
+      "description": "Flask-based web application for reliable transcription and speaker diarization with a simple, intuitive workflow. Handles uploads, job management, and multiple export formats.",
+      "stack": ["Flask", "React", "Remix", "Tailwind"],
+      "tags": ["Web app", "AI/ML", "Workflow design"],
+      "accentColor": "ai-media",
+      "slug": "/projects/pro-transcribe"
+    },
+    {
+      "id": "behavior-tracker",
+      "name": "Behavior Data Tracker",
+      "role": "Founder / iOS Developer",
+      "summary": "Special-needs behavior tracking app for educational environments",
+      "description": "iOS app built with Swift and Objective-C for tracking behavior data in special-needs educational settings. Improved data capture and analysis for staff and students.",
+      "stack": ["Swift", "Objective-C", "iOS"],
+      "tags": ["Mobile app", "Legacy", "UX for accessibility"],
+      "accentColor": "legacy",
+      "slug": "/projects/behavior-tracker"
+    },
+    {
+      "id": "homelab",
+      "name": "Homelab Infrastructure",
+      "role": "Architect / Operator",
+      "summary": "GPU-powered private cloud for AI inference and media processing",
+      "description": "Self-hosted infrastructure with pfSense firewall, QNAP NAS storage, Ubuntu GPU servers, and segmented VLANs. Supports VidCutAI processing and hosts experiments.",
+      "stack": ["pfSense", "Protectli", "QNAP", "Ubuntu", "Docker", "GPU servers"],
+      "tags": ["Infrastructure", "Networking", "Security", "Self-hosted"],
+      "accentColor": "infrastructure",
+      "slug": "/projects/homelab"
+    }
+  ]
+}
+

@@ -1,0 +1,149 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { Section } from '../../components/ui/Section';
+import { ScrollReveal } from '../../components/animations/ScrollReveal';
+import { Card } from '../../components/ui/Card';
+import { Tag } from '../../components/ui/Tag';
+---
+
+<ProjectLayout 
+  title="Homelab Infrastructure" 
+  description="GPU-powered private cloud for AI inference and media processing."
+>
+  <Section spacing="lg" id="homelab">
+    {/* Hero */}
+    <ScrollReveal>
+      <div className="max-w-4xl mb-16">
+        <h1 className="text-4xl md:text-section font-bold text-text-primary mb-4">
+          Homelab Infrastructure
+        </h1>
+        <p className="text-xl text-text-secondary mb-6">
+          GPU-powered private cloud for AI inference and media processing.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Tag variant="infra">Infrastructure</Tag>
+          <Tag variant="infra">Networking</Tag>
+          <Tag variant="infra">Security</Tag>
+          <Tag variant="infra">Self-hosted</Tag>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Overview */}
+    <ScrollReveal delay={0.1}>
+      <Card className="mb-16">
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">Overview</h2>
+        <p className="text-text-secondary mb-4">
+          Self-hosted infrastructure designed for AI inference, media processing, and continuous experimentation.
+          The homelab supports VidCutAI processing, hosts prototypes, and serves as a private cloud for personal projects.
+        </p>
+        <p className="text-text-secondary">
+          Built with a focus on network segmentation, security, and GPU optimization for machine learning workloads.
+        </p>
+      </Card>
+    </ScrollReveal>
+
+    {/* Components */}
+    <ScrollReveal delay={0.2}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Components</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">pfSense on Protectli</h3>
+            <p className="text-text-secondary text-sm">Firewall, router, and network security</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">QNAP NAS</h3>
+            <p className="text-text-secondary text-sm">Centralized storage for media and data</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Ubuntu GPU Servers</h3>
+            <p className="text-text-secondary text-sm">RTX GPU nodes for AI inference and processing</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Raspberry Pi</h3>
+            <p className="text-text-secondary text-sm">Various services and monitoring</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Eero Wi-Fi</h3>
+            <p className="text-text-secondary text-sm">Wireless network management</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">VLAN Segmentation</h3>
+            <p className="text-text-secondary text-sm">Network isolation for security and organization</p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Network Diagram */}
+    <ScrollReveal delay={0.3}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Network Architecture</h2>
+        <Card className="bg-bg-surface-light">
+          <div className="text-center py-16 text-text-muted">
+            Network diagram placeholder
+            <div className="mt-4 text-sm">
+              Core firewall/router → switches → VLANs → servers → storage → Wi-Fi
+            </div>
+          </div>
+        </Card>
+      </div>
+    </ScrollReveal>
+
+    {/* Use Cases */}
+    <ScrollReveal delay={0.4}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Use Cases</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">VidCutAI Processing</h3>
+            <p className="text-text-secondary text-sm">
+              GPU nodes run model inference for speaker diarization and transcription
+            </p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Experiments & Prototypes</h3>
+            <p className="text-text-secondary text-sm">
+              Host new projects and test infrastructure changes in isolated environments
+            </p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Private Cloud</h3>
+            <p className="text-text-secondary text-sm">
+              Self-hosted services for personal projects and learning
+            </p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Technical Details */}
+    <ScrollReveal delay={0.5}>
+      <Card>
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">Technical Details</h2>
+        <div className="space-y-4 text-text-secondary">
+          <div>
+            <h3 className="font-semibold text-text-primary mb-2">Network Segmentation</h3>
+            <p className="text-sm">
+              VLANs isolate IoT devices, servers, and guest networks for security and performance.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-text-primary mb-2">GPU Allocation</h3>
+            <p className="text-sm">
+              Optimized GPU allocation for AI workloads with monitoring and resource management.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-text-primary mb-2">Continuous Experimentation</h3>
+            <p className="text-sm">
+              Infrastructure evolves based on needs, with documentation and version control for configurations.
+            </p>
+          </div>
+        </div>
+      </Card>
+    </ScrollReveal>
+  </Section>
+</ProjectLayout>
+

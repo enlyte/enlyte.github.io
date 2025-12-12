@@ -1,0 +1,197 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { Section } from '../../components/ui/Section';
+import { ScrollReveal } from '../../components/animations/ScrollReveal';
+import { Card } from '../../components/ui/Card';
+import { Tag } from '../../components/ui/Tag';
+import { PipelineStage } from '../../components/sections/PipelineStage';
+---
+
+<ProjectLayout 
+  title="VidCutAI - AI-Powered Multicam Podcast Editor" 
+  description="Production-grade AI-driven multicam podcast editor with client-side processing and FCPXML export."
+>
+  <Section spacing="lg" id="vidcutai">
+    {/* Hero */}
+    <ScrollReveal>
+      <div className="max-w-4xl mb-16">
+        <h1 className="text-4xl md:text-section font-bold text-text-primary mb-4">
+          VidCutAI: AI-Powered Multicam Podcast Editor
+        </h1>
+        <p className="text-xl text-text-secondary mb-6">
+          Automated multicam editing using AI-powered speaker diarization and intelligent angle selection.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Tag variant="ai">Desktop app</Tag>
+          <Tag variant="ai">AI/ML</Tag>
+          <Tag variant="ai">Media processing</Tag>
+          <Tag variant="ai">Python</Tag>
+          <Tag variant="ai">PySide6</Tag>
+          <Tag variant="ai">Flask</Tag>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Problem & Solution */}
+    <ScrollReveal delay={0.1}>
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <Card>
+          <h2 className="text-2xl font-semibold text-text-primary mb-4">Problem</h2>
+          <p className="text-text-secondary">
+            Manual multicam podcast editing is time-consuming and repetitive. Selecting the right camera angle
+            for each speaker requires constant attention and decision-making, turning hours of footage into days of editing work.
+          </p>
+        </Card>
+        <Card>
+          <h2 className="text-2xl font-semibold text-text-primary mb-4">Solution</h2>
+          <p className="text-text-secondary">
+            VidCutAI automates the entire process: transcription, speaker diarization, intelligent angle selection,
+            and FCPXML export. All processing happens client-side for privacy and speed, with an intuitive UI for configuration.
+          </p>
+        </Card>
+      </div>
+    </ScrollReveal>
+
+    {/* Architecture */}
+    <ScrollReveal delay={0.2}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Architecture & Stack</h2>
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Backend</h3>
+            <p className="text-text-secondary text-sm">Python Flask services, MongoDB for state management</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Desktop UI</h3>
+            <p className="text-text-secondary text-sm">PySide6 (Qt) for native feel and performance</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Infrastructure</h3>
+            <p className="text-text-secondary text-sm">Dockerized components, Nginx reverse proxy</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Processing</h3>
+            <p className="text-text-secondary text-sm">Client-side for privacy and speed</p>
+          </Card>
+        </div>
+        <Card className="bg-bg-surface-light">
+          <div className="text-center py-8 text-text-muted">
+            Architecture diagram placeholder
+          </div>
+        </Card>
+      </div>
+    </ScrollReveal>
+
+    {/* Pipeline Flow */}
+    <ScrollReveal delay={0.3}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Pipeline Flow</h2>
+        <PipelineStage
+          stageNumber={1}
+          title="Audio/Video Ingestion"
+          description="File upload, format detection, and initial validation"
+          index={0}
+          client:load
+        />
+        <PipelineStage
+          stageNumber={2}
+          title="Conversion & Preprocessing"
+          description="FFmpeg conversion, audio extraction, and format normalization"
+          index={1}
+          client:load
+        />
+        <PipelineStage
+          stageNumber={3}
+          title="Transcription"
+          description="Whisper API integration for accurate speech-to-text conversion"
+          index={2}
+          client:load
+        />
+        <PipelineStage
+          stageNumber={4}
+          title="Diarization"
+          description="Speaker identification and segmentation for multi-speaker content"
+          index={3}
+          client:load
+        />
+        <PipelineStage
+          stageNumber={5}
+          title="Angle Configuration"
+          description="UI for mapping diarization IDs to user-facing names and camera angles"
+          index={4}
+          client:load
+        />
+        <PipelineStage
+          stageNumber={6}
+          title="Cut Logic & Export"
+          description="Jumpcut heuristics, FCPXML generation, and organized export directories"
+          index={5}
+          client:load
+        />
+      </div>
+    </ScrollReveal>
+
+    {/* Key Features */}
+    <ScrollReveal delay={0.4}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Key Features</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Angle Configuration Window</h3>
+            <p className="text-text-secondary text-sm">
+              Visual mapping interface for connecting speakers to camera angles with intuitive drag-and-drop.
+            </p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Global Speaker Editor</h3>
+            <p className="text-text-secondary text-sm">
+              Manage speaker identities across sessions for consistent naming and angle assignment.
+            </p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Export Screen</h3>
+            <p className="text-text-secondary text-sm">
+              FCPXML export with organized directory structure, ready for Final Cut Pro import.
+            </p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Logging & Safeguards</h3>
+            <p className="text-text-secondary text-sm">
+              Comprehensive error handling, long segment detection, and speaker mapping validation.
+            </p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Screens Gallery */}
+    <ScrollReveal delay={0.5}>
+      <div>
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Screens & UI</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <div className="aspect-video bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Main dashboard screenshot
+            </div>
+          </Card>
+          <Card>
+            <div className="aspect-video bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Angle configuration window
+            </div>
+          </Card>
+          <Card>
+            <div className="aspect-video bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Global speaker editor
+            </div>
+          </Card>
+          <Card>
+            <div className="aspect-video bg-bg-surface-light rounded flex items-center justify-center text-text-muted text-sm">
+              Export screen
+            </div>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+  </Section>
+</ProjectLayout>
+

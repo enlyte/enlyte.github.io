@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { ContactForm } from '../components/sections/ContactForm';
+---
+
+<BaseLayout title="Contact - Stephen Moy" description="Get in touch about opportunities in AI for media, full-stack systems, infra-heavy tools, and creative tech.">
+  <Section spacing="lg" id="contact">
+    <div className="max-w-2xl mx-auto">
+      <ScrollReveal>
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+            Get in Touch
+          </h1>
+          <p className="text-lg text-text-secondary max-w-xl mx-auto">
+            I'm open to opportunities in AI for media, full-stack systems, infra-heavy tools, and creative tech.
+            Whether it's consulting, collaboration, or a full-time role, let's talk.
+          </p>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.1}>
+        <ContactForm client:load />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.2}>
+        <div className="mt-12 text-center">
+          <h2 className="text-xl font-semibold text-text-primary mb-4">
+            Direct Contact
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="mailto:contact@stephenmoy.com"
+              className="text-accent-ai-media-light hover:text-accent-ai-media transition-colors"
+            >
+              contact@stephenmoy.com
+            </a>
+            <span className="text-text-muted hidden sm:inline">•</span>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-secondary hover:text-text-primary transition-colors"
+            >
+              GitHub
+            </a>
+            <span className="text-text-muted hidden sm:inline">•</span>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-secondary hover:text-text-primary transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <p className="text-text-muted text-sm mt-6">
+            I typically respond within 24-48 hours.
+          </p>
+        </div>
+      </ScrollReveal>
+    </div>
+  </Section>
+</BaseLayout>
+

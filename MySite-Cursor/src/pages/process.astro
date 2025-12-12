@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { ProcessStepper } from '../components/sections/ProcessStepper';
+---
+
+<BaseLayout title="Process & Psychology - Stephen Moy" description="How I think and solve problems, both technical and non-technical.">
+  <Section spacing="lg" id="process">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+          Process & Psychology
+        </h1>
+        <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          How I approach problems, make decisions, and build systems.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <ProcessStepper client:load />
+  </Section>
+</BaseLayout>
+

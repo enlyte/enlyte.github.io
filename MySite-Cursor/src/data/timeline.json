@@ -1,0 +1,41 @@
+{
+  "timeline": [
+    {
+      "id": "curriculum-manager",
+      "period": "2008-2013",
+      "title": "Technology Curriculum Manager",
+      "organization": "Guild for Human Services",
+      "icon": "education",
+      "description": "Managed tech curriculum and worked with special needs students, helping them use technology effectively.",
+      "accentColor": "legacy"
+    },
+    {
+      "id": "behavior-tracker",
+      "period": "2013-2017",
+      "title": "Founder / iOS Developer",
+      "organization": "Behavior Data Tracker",
+      "icon": "mobile",
+      "description": "Built Swift/Objective-C app for behavior tracking in educational settings. Improved data capture for staff and students.",
+      "accentColor": "legacy"
+    },
+    {
+      "id": "sales-engineer",
+      "period": "2017-2020",
+      "title": "Sales Engineer",
+      "organization": "Experian Data Quality",
+      "icon": "enterprise",
+      "description": "Technical sales and customer-facing role. Translated customer needs into technical specifications and communicated complex solutions.",
+      "accentColor": "ux-product"
+    },
+    {
+      "id": "vidcutai",
+      "period": "2021-Present",
+      "title": "Founder / Lead Developer",
+      "organization": "Nulite / VidCutAI",
+      "icon": "ai",
+      "description": "AI-powered multicam podcast editor. Full-stack product development from architecture to UX, combining AI, media processing, and infrastructure.",
+      "accentColor": "ai-media"
+    }
+  ]
+}
+

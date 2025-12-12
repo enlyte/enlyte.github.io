@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Section } from '../../components/ui/Section';
+import { ScrollReveal } from '../../components/animations/ScrollReveal';
+import { ProjectCard } from '../../components/sections/ProjectCard';
+import projectsData from '../../data/projects.json';
+---
+
+<BaseLayout title="Projects - Stephen Moy" description="Real, shipped products showcasing technical depth and product-building ability.">
+  <Section spacing="lg" id="projects">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+          Projects
+        </h1>
+        <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          Real, shipped products that demonstrate technical competency and product-building ability.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {projectsData.projects.map((project, index) => (
+        <ProjectCard key={project.id} project={project} index={index} client:load />
+      ))}
+    </div>
+  </Section>
+</BaseLayout>
+

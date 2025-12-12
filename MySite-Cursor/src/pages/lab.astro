@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { Card } from '../components/ui/Card';
+---
+
+<BaseLayout title="Lab - Experiments & Ongoing Work - Stephen Moy" description="Experiments, prototypes, and ongoing work.">
+  <Section spacing="lg" id="lab">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+          Lab
+        </h1>
+        <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          Experiments, prototypes, and ongoing work.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <ScrollReveal delay={0.1}>
+      <Card>
+        <div className="text-center py-16 text-text-muted">
+          <div className="text-6xl mb-4">🔬</div>
+          <p className="text-lg mb-2">Lab section coming soon</p>
+          <p className="text-sm">Experiments and ongoing projects will be documented here</p>
+        </div>
+      </Card>
+    </ScrollReveal>
+  </Section>
+</BaseLayout>
+

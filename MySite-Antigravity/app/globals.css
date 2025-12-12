@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  /* Always Dark Mode / Studio Feel */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Accents */
+  --color-vidcut: #6366f1;
+  /* Indigo 500 */
+  --color-infra: #10b981;
+  /* Emerald 500 */
+  --color-exp: #f59e0b;
+  /* Amber 500 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-vidcut: var(--color-vidcut);
+  --color-infra: var(--color-infra);
+  --color-exp: var(--color-exp);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}

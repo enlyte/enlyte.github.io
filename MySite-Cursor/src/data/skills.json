@@ -1,0 +1,45 @@
+{
+  "skills": [
+    {
+      "id": "fullstack",
+      "name": "Full-Stack & Product",
+      "category": "fullstack",
+      "tools": ["Python", "Flask", "React", "Remix", "Tailwind", "TypeScript", "JavaScript"],
+      "example": "Built VidCutAI desktop app with PySide6 and Flask backend",
+      "accentColor": "ai-media"
+    },
+    {
+      "id": "ai-media",
+      "name": "AI & Media Processing",
+      "category": "ai",
+      "tools": ["Whisper", "Diarization", "FFmpeg", "FCPXML", "Multicam", "XML export logic"],
+      "example": "Implemented speaker diarization pipeline for automated angle selection",
+      "accentColor": "ai-media"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Infrastructure",
+      "category": "infra",
+      "tools": ["Docker", "Nginx", "pfSense", "Protectli", "Raspberry Pi", "GPU servers", "SSL", "Routing", "Segmentation"],
+      "example": "Designed homelab network with VLAN segmentation and GPU inference nodes",
+      "accentColor": "infrastructure"
+    },
+    {
+      "id": "ux",
+      "name": "UX & Desktop/Web UI",
+      "category": "frontend",
+      "tools": ["PySide6", "React components", "Tailwind", "Responsive design", "Accessibility"],
+      "example": "Created intuitive angle configuration UI for VidCutAI",
+      "accentColor": "ux-product"
+    },
+    {
+      "id": "communication",
+      "name": "Communication & Sales Engineering",
+      "category": "communication",
+      "tools": ["Technical presentations", "Customer discovery", "Requirements gathering", "Documentation"],
+      "example": "Translated customer needs into technical specifications at Experian",
+      "accentColor": "ux-product"
+    }
+  ]
+}
+

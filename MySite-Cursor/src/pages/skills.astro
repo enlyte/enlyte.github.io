@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { SkillsGrid } from '../components/sections/SkillsGrid';
+---
+
+<BaseLayout title="Skills & Capabilities - Stephen Moy" description="Technical skills and capabilities across full-stack development, AI, infrastructure, and UX.">
+  <Section spacing="lg" id="skills">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+          Skills & Capabilities
+        </h1>
+        <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          Depth and breadth across product development, from AI and media processing to infrastructure and UX.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <SkillsGrid client:load />
+  </Section>
+</BaseLayout>
+

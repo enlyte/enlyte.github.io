@@ -1,0 +1,121 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import { Section } from '../../components/ui/Section';
+import { ScrollReveal } from '../../components/animations/ScrollReveal';
+import { Card } from '../../components/ui/Card';
+import { Tag } from '../../components/ui/Tag';
+---
+
+<ProjectLayout 
+  title="Pro Transcribe - Web-based Transcription Tool" 
+  description="Flask-based web application for reliable transcription and speaker diarization."
+>
+  <Section spacing="lg" id="pro-transcribe">
+    {/* Hero */}
+    <ScrollReveal>
+      <div className="max-w-4xl mb-16">
+        <h1 className="text-4xl md:text-section font-bold text-text-primary mb-4">
+          Pro Transcribe
+        </h1>
+        <p className="text-xl text-text-secondary mb-6">
+          Web-based transcription and diarization tool with a simple, intuitive workflow.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <Tag variant="ai">Web app</Tag>
+          <Tag variant="ai">AI/ML</Tag>
+          <Tag variant="ai">Workflow design</Tag>
+          <Tag variant="ai">Flask</Tag>
+          <Tag variant="ai">React</Tag>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Problem */}
+    <ScrollReveal delay={0.1}>
+      <Card className="mb-16">
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">Problem</h2>
+        <p className="text-text-secondary">
+          Need for reliable transcription and diarization with a simple workflow. Many solutions are either
+          too complex, too expensive, or lack the features needed for professional use.
+        </p>
+      </Card>
+    </ScrollReveal>
+
+    {/* Stack */}
+    <ScrollReveal delay={0.2}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Stack</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Backend</h3>
+            <p className="text-text-secondary text-sm">Flask for API and job processing</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Frontend</h3>
+            <p className="text-text-secondary text-sm">React/Remix for interactive UI</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Styling</h3>
+            <p className="text-text-secondary text-sm">Tailwind CSS for modern design</p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Workflow */}
+    <ScrollReveal delay={0.3}>
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Workflow</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card>
+            <div className="text-4xl mb-4 text-center">1</div>
+            <h3 className="font-semibold text-text-primary mb-2 text-center">Upload</h3>
+            <p className="text-text-secondary text-sm text-center">
+              Upload audio file through intuitive drag-and-drop interface
+            </p>
+          </Card>
+          <Card>
+            <div className="text-4xl mb-4 text-center">2</div>
+            <h3 className="font-semibold text-text-primary mb-2 text-center">Processing</h3>
+            <p className="text-text-secondary text-sm text-center">
+              Real-time status tracking in processing queue with progress indicators
+            </p>
+          </Card>
+          <Card>
+            <div className="text-4xl mb-4 text-center">3</div>
+            <h3 className="font-semibold text-text-primary mb-2 text-center">Results</h3>
+            <p className="text-text-secondary text-sm text-center">
+              View results and export in multiple formats (SRT, text, JSON)
+            </p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+
+    {/* Features */}
+    <ScrollReveal delay={0.4}>
+      <div>
+        <h2 className="text-3xl font-semibold text-text-primary mb-8">Features</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Account & Authentication</h3>
+            <p className="text-text-secondary text-sm">Secure user accounts with job history</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Admin Insights</h3>
+            <p className="text-text-secondary text-sm">Dashboard for usage analytics and management</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Multiple Export Formats</h3>
+            <p className="text-text-secondary text-sm">SRT, plain text, JSON, and more</p>
+          </Card>
+          <Card>
+            <h3 className="font-semibold text-text-primary mb-2">Job History</h3>
+            <p className="text-text-secondary text-sm">Access previous transcriptions and exports</p>
+          </Card>
+        </div>
+      </div>
+    </ScrollReveal>
+  </Section>
+</ProjectLayout>
+

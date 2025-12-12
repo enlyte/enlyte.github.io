@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { HeroSection } from '../components/sections/HeroSection';
+import { StatsBar } from '../components/sections/StatsBar';
+import { StackPreview } from '../components/sections/StackPreview';
+---
+
+<BaseLayout title="Stephen Moy - Technical Founder" description="Technical Founder building AI-powered media tools and systems that scale.">
+  <HeroSection client:load />
+  <StatsBar client:load />
+  <StackPreview client:load />
+</BaseLayout>
+

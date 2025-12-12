@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Section } from '../components/ui/Section';
+import { ScrollReveal } from '../components/animations/ScrollReveal';
+import { Card } from '../components/ui/Card';
+import { StaggerContainer } from '../components/animations/StaggerContainer';
+---
+
+<BaseLayout title="Personal - Beyond Work - Stephen Moy" description="Non-work interests and humanizing content.">
+  <Section spacing="lg" id="personal">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h1 className="text-3xl md:text-section font-bold text-text-primary mb-4">
+          Beyond Work
+        </h1>
+        <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          Interests and projects outside of work.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <StaggerContainer staggerDelay={0.1}>
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* Sugar Gliders */}
+        <ScrollReveal>
+          <Card hover className="h-full">
+            <div className="aspect-[4/3] bg-bg-surface-light rounded-card mb-4 flex items-center justify-center">
+              <div className="text-center text-text-muted">
+                <div className="text-4xl mb-2">🦎</div>
+                <p className="text-sm">Photo placeholder</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-text-primary mb-2">
+              Sugar Gliders
+            </h3>
+            <p className="text-text-secondary text-sm">
+              Lego and Cella. Short text about their personalities and the idea of turning them into a story or animated project.
+            </p>
+          </Card>
+        </ScrollReveal>
+
+        {/* Music / Audio Gear */}
+        <ScrollReveal delay={0.1}>
+          <Card hover className="h-full">
+            <div className="aspect-[4/3] bg-bg-surface-light rounded-card mb-4 flex items-center justify-center">
+              <div className="text-center text-text-muted">
+                <div className="text-4xl mb-2">🎵</div>
+                <p className="text-sm">Photo placeholder</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-text-primary mb-2">
+              Music & Audio Gear
+            </h3>
+            <p className="text-text-secondary text-sm">
+              Shure SM7B, Avalon V5, Maschine, Traktor. Interest in audio production and DJing.
+            </p>
+          </Card>
+        </ScrollReveal>
+
+        {/* Events / Creative Projects */}
+        <ScrollReveal delay={0.2}>
+          <Card hover className="h-full">
+            <div className="aspect-[4/3] bg-bg-surface-light rounded-card mb-4 flex items-center justify-center">
+              <div className="text-center text-text-muted">
+                <div className="text-4xl mb-2">🎨</div>
+                <p className="text-sm">Photo placeholder</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-text-primary mb-2">
+              Events & Creative Projects
+            </h3>
+            <p className="text-text-secondary text-sm">
+              Rune Soirée and other creative events. Experience design interests.
+            </p>
+          </Card>
+        </ScrollReveal>
+
+        {/* Homelab as Hobby */}
+        <ScrollReveal delay={0.3}>
+          <Card hover className="h-full">
+            <div className="aspect-[4/3] bg-bg-surface-light rounded-card mb-4 flex items-center justify-center">
+              <div className="text-center text-text-muted">
+                <div className="text-4xl mb-2">🖥️</div>
+                <p className="text-sm">Photo placeholder</p>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-text-primary mb-2">
+              Homelab
+            </h3>
+            <p className="text-text-secondary text-sm">
+              Infrastructure as a hobby. Continuous experimentation and optimization of self-hosted systems.
+            </p>
+          </Card>
+        </ScrollReveal>
+      </div>
+    </StaggerContainer>
+  </Section>
+</BaseLayout>
+
