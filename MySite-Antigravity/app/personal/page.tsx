@@ -142,7 +142,7 @@ export default function PersonalPage() {
                         <div className="mt-auto">
                             <div className="relative h-64 rounded-lg overflow-hidden bg-neutral-950 border border-white/5">
                                 <Image
-                                    src="/images/personal/3dprint.png"
+                                    src="/images/personal/3dPrint.png"
                                     alt="Fusion 360 design and 3D printed parts"
                                     fill
                                     className="object-cover hover:scale-105 transition-transform duration-500"
