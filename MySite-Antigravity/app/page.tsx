@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ArrowRight, Terminal, Cpu, Layers } from "lucide-react"
+import Image from "next/image"
 import { Section } from "@/components/ui/section"
 import { Card } from "@/components/ui/card"
+import { StatsBar } from "@/components/home/stats-bar"
 
 export default function Home() {
   const stack = ["Python", "Flask", "PySide6", "Next.js", "TypeScript", "Docker", "FFmpeg", "Nginx"]
@@ -20,7 +22,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl">
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl md:text-5xl lg:text-6xl">
                 Technical Founder <br />
                 <span className="text-neutral-500">building intelligent tools.</span>
               </h1>
@@ -67,10 +69,18 @@ export default function Home() {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-neutral-800 border border-white/5 overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
               {/* Placeholder for Profile Image */}
               {/* <Image src="/path/to/profile.jpg" fill className="object-cover" /> */}
+              <Image
+                src="/images/SteveBW.jpg"
+                alt="Stephen Moy"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+              {/* 
               <div className="absolute inset-0 flex items-center justify-center text-neutral-600 font-mono text-xs text-center p-4">
                 [Profile Image Placement]<br />
                 Black & White Theme
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
@@ -93,176 +103,189 @@ export default function Home() {
             </div>
           </motion.div> */}
 
-        {/* <div className="mb-12 pt-4"> */}
-        <div className="mb-12 pt-16 max-w-4xl mx-auto">
-
-
-          {/* <h2 className="text-xl font-bold text-gray-200 mb-4">Skills</h2> */}
-          <p className="text-xs font-mono text-neutral-600 mb-8 uppercase tracking-wider text-center">Core Technologies</p>
-          {/* <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-             */}
-          {/* <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"> */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
-
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
+        {/* CENTERED BUTTONS: */}
+        {/* <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
               <img src="icons/appwrite-original.svg" alt="Appwrite" className="w-6 h-6" />
               <span className="text-sm font-medium text-gray-200">Appwrite</span>
+            </div> */}
+
+
+        <div className="mb-4 pt-16 max-w-4xl mx-auto">
+          <p className="text-xs font-mono text-neutral-600 mb-8 uppercase tracking-wider text-center">
+            Core Technologies
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5  gap-3">
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/appwrite-original.svg" alt="Appwrite" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Appwrite</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/astro-original.svg" alt="Astro" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Astro</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/astro-original.svg" alt="Astro" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Astro</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/digitalocean-original.svg" alt="DigitalOcean" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">DigitalOcean</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/cuda-original.svg" alt="CUDA / Nvidia" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">CUDA / Nvidia</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/docker-original.svg" alt="Docker" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Docker</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/digitalocean-original.svg" alt="DigitalOcean" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">DigitalOcean</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/express-original.svg" alt="Express" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Express</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/docker-original.svg" alt="Docker" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Docker</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/firebase-original.svg" alt="Firebase" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Firebase</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/express-original.svg" alt="Express" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Express</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/flask-original.svg" alt="Flask" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Flask</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/firebase-original.svg" alt="Firebase" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Firebase</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/git-original.svg" alt="Git" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Git</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/flask-original.svg" alt="Flask" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Flask</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/googlecloud-original.svg" alt="GCP" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">GCP</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/git-original.svg" alt="Git" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Git</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/html5-original.svg" alt="HTML" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">HTML</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/googlecloud-original.svg" alt="GCP" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">GCP</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/javascript-original.svg" alt="JavaScript" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">JavaScript</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/html5-original.svg" alt="HTML" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">HTML</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/json-original.svg" alt="JSON" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">JSON</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/javascript-original.svg" alt="JavaScript" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">JavaScript</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/linux-original.svg" alt="Linux" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Linux</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/json-original.svg" alt="JSON" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">JSON</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/mongodb-original.svg" alt="MongoDB" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">MongoDB</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/linux-original.svg" alt="Linux" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Linux</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/nextjs-original.svg" alt="Next.js" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Next.js</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/mongodb-original.svg" alt="MongoDB" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">MongoDB</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/nginx-original.svg" alt="Nginx" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Nginx</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/nextjs-original.svg" alt="Next.js" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Next.js</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/nodejs-original.svg" alt="Node.js" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Node.js</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/nginx-original.svg" alt="Nginx" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Nginx</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/npm-original-wordmark.svg" alt="npm" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">npm</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/nodejs-original.svg" alt="Node.js" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Node.js</span>
             </div>
 
-            {/* <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-                <img src="icons/objectivec-plain.svg" alt="Objective-C" className="w-6 h-6" />
-                <span className="text-sm font-medium text-gray-200">Objective-C</span>
-              </div> */}
-
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/pfsense-original.svg" alt="pfSense" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">pfSense</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/npm-original-wordmark.svg" alt="npm" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">npm</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/postman-original.svg" alt="Postman" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Postman</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/objectivec-plain.svg" alt="Objective-C" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Objective-C</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/python-original.svg" alt="Python" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Python</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/pfsense-original.svg" alt="pfSense" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">pfSense</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/pytorch-original.svg" alt="PyTorch" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">PyTorch</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/postman-original.svg" alt="Postman" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Postman</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/rabbitmq-original.svg" alt="RabbitMQ" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">RabbitMQ</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/python-original.svg" alt="Python" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Python</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/solidity-original.svg" alt="Solidity" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Solidity</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/pytorch-original.svg" alt="PyTorch" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">PyTorch</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/sqlite-original.svg" alt="SQLite" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">SQLite</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/rabbitmq-original.svg" alt="RabbitMQ" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">RabbitMQ</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/ssh-original.svg" alt="SSH" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">SSH</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/solidity-original.svg" alt="Solidity" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Solidity</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/ssl2.png" alt="SSL" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">SSL</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/sqlite-original.svg" alt="SQLite" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">SQLite</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/swift-original.svg" alt="Swift" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Swift</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/ssh-original.svg" alt="SSH" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">SSH</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/ubuntu-original.svg" alt="Ubuntu" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Ubuntu</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/ssl2.png" alt="SSL" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">SSL</span>
             </div>
 
-            <div className="flex items-center justify-center space-x-2 bg-neutral-900 border border-white/5 p-2 rounded transition ease-in-out duration-200 hover:bg-gray-700">
-              <img src="icons/xcode-original.svg" alt="Xcode" className="w-6 h-6" />
-              <span className="text-sm font-medium text-gray-200">Xcode</span>
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/swift-original.svg" alt="Swift" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Swift</span>
+            </div>
+
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/ubuntu-original.svg" alt="Ubuntu" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Ubuntu</span>
+            </div>
+
+            <div className="flex items-center gap-3 bg-neutral-900 border border-white/5 px-3 py-2 rounded transition-colors duration-200 hover:bg-gray-700 min-h-[44px]">
+              <img src="/icons/xcode-original.svg" alt="Xcode" className="w-6 h-6 shrink-0" />
+              <span className="text-sm font-medium text-gray-200 truncate">Xcode</span>
             </div>
           </div>
         </div>
 
+      </Section>
+
+      {/* Stats Bar */}
+      <StatsBar />
+
+      <Section className="py-8">
         {/* Capabilities Section */}
-        <div className="py-24">
+        <div>
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-4">Capabilities</h2>
             <p className="text-neutral-400 max-w-2xl">The toolbox I use to build systems.</p>
@@ -271,38 +294,88 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "AI & Media Processing",
-                description: "Building intelligent pipelines for audio/video.",
-                skills: ["Python", "OpenAI Whisper", "FFmpeg", "Pyannote", "FCPXML", "Computer Vision"]
+                title: "AI Systems & Applied Models",
+                description: "Designing practical AI pipelines, from local inference to cloud-scale LLM workflows.",
+                skills: [
+                  "Diarization Models",
+                  "Transcription Models",
+                  "Mel-Band Roformer",
+                  "Demucs Stem Separation",
+                  "Local & API LLMs",
+                  "Embeddings",
+                  "Vector Databases (Pinecone, FAISS)"
+                ]
+              },
+              {
+                title: "Media Processing",
+                description: "Robust audio and video workflows for automation, cleanup, and editing pipelines.",
+                skills: [
+                  "FFmpeg Tooling",
+                  "Audio Cleanup & Noise Separation",
+                  "Stem Extraction",
+                  "Video Conversion & Optimization",
+                  "Timeline Generation",
+                  "FCPXML Authoring"
+                ]
               },
               {
                 title: "Full-Stack Web",
-                description: "Modern, reactive web applications.",
-                skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Flask", "PostgreSQL"]
+                description: "Modern, scalable applications across Python, Node, and reactive front-ends.",
+                skills: [
+                  "Python",
+                  "Node.js",
+                  "Flask",
+                  "MongoDB",
+                  "React",
+                  "Next.js",
+                  "TypeScript",
+                  "Tailwind CSS"
+                ]
               },
               {
-                title: "Desktop App Dev",
-                description: "High-performance native-feeling tools.",
-                skills: ["PySide6 (Qt)", "Electron", "Threading/Async", "Local File Systems"]
+                title: "Desktop Application Development",
+                description: "Local-first tools that feel native, fast, and reliable for power users.",
+                skills: [
+                  "PySide6 (Qt)",
+                  "Electron",
+                  "Threading & Async Pipelines",
+                  "Local File Systems",
+                  "Cross-Platform Packaging"
+                ]
               },
               {
                 title: "DevOps & Infrastructure",
-                description: "Bare-metal to cloud scaling.",
-                skills: ["Docker", "Nginx", "Linux (Ubuntu)", "PfSense", "Proxmox", "TrueNAS"]
+                description: "From local inference machines to cloud deployments and home-lab orchestration.",
+                skills: [
+                  "Docker",
+                  "Nginx",
+                  "Linux (Ubuntu)",
+                  "PfSense",
+                  "Proxmox",
+                  "QNAP"
+                ]
               },
               {
-                title: "Product & Design",
-                description: "From concept to shipped user experience.",
-                skills: ["Figma", "User Research", "Systems Architecture", "Technical Sales"]
+                title: "Product Strategy & System Design",
+                description: "Turning complex requirements into usable, high-leverage tools.",
+                skills: [
+                  "Architecture Planning",
+                  "Workflow Optimization",
+                  "User Experience Intuition",
+                  "Technical Communication",
+                  "Rapid Prototyping"
+                ]
               }
-            ].map((category) => (
-              <Card key={category.title} className="p-8 hover:border-indigo-500/30 transition-colors">
-                <h3 className="text-xl font-bold text-white mb-2">{category.title}</h3>
-                <p className="text-sm text-neutral-500 mb-6 min-h-[40px]">{category.description}</p>
-
+            ].map(({ title, description, skills }) => (
+              <Card key={title} className="p-6 bg-neutral-900 border border-white/5">
+                <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+                <p className="text-neutral-400 text-sm mb-4">{description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map(skill => (
-                    <span key={skill} className="text-xs font-mono text-neutral-300 bg-neutral-800 px-2 py-1 rounded border border-white/5">
+                  {skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2 py-1 text-xs bg-neutral-800 border border-white/5 rounded text-neutral-300"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -310,6 +383,7 @@ export default function Home() {
               </Card>
             ))}
           </div>
+
         </div>
       </Section>
 
@@ -331,30 +405,37 @@ export default function Home() {
               {/* Content */}
               <div className="flex-1 p-8 md:p-12 flex flex-col justify-center z-10">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium w-fit mb-6">
-                  <Cpu className="h-3 w-3" /> AI & Media Systems
+                  <Cpu className="h-3 w-3" /> Local-First AI & Media Systems
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors">VidCutAI</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors">
+                  VidCutAI
+                </h3>
                 <p className="text-neutral-400 text-lg mb-8 max-w-md">
-                  An intelligent desktop application for automated multicam media processing.
-                  Local-first AI pipeline with diarization, transcription, and FCPXML export.
+                  An AI-powered desktop application for automated podcast multicam editing.
+                  AI-powered diarization and transcription, and
+                  FFmpeg-driven timelines exported directly to XML for Final Cut Pro and DaVinci Resolve.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">Python</span>
                   <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">PySide6</span>
                   <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">FFmpeg</span>
+                  <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">Diarization</span>
+                  <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">Transcription</span>
+                  <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">FCPXML</span>
+                  <span className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded">Local Pipelines</span>
                 </div>
               </div>
 
               {/* Abstract Visual / Placeholder */}
               <div className="flex-1 bg-neutral-900/50 relative overflow-hidden min-h-[300px] md:min-h-auto">
-                {/* Decorative Elements resembling a timeline */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-30 group-hover:opacity-50 transition-opacity">
-                  <Layers className="h-32 w-32 text-indigo-900 " />
+                  <Layers className="h-32 w-32 text-indigo-900" />
                 </div>
                 <div className="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-neutral-950 to-transparent" />
               </div>
             </Card>
           </Link>
+
         </motion.div>
       </Section>
     </div>

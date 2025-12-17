@@ -3,6 +3,7 @@ import { projects } from "@/lib/data"
 import { Section } from "@/components/ui/section"
 import { ArrowLeft, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 // This is correct for Next.js 14/15 App Router dynamic params
 export async function generateStaticParams() {
@@ -59,6 +60,13 @@ export default async function ProjectLayout({
                                 <h3 className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-2">Role</h3>
                                 <p className="text-sm text-white font-medium">{project.role}</p>
                             </div>
+                            {project.status && (
+                                <div>
+                                    <h3 className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-2">Status</h3>
+                                    <p className="text-sm text-neutral-300">{project.status}</p>
+                                </div>
+                            )}
+
                             <div>
                                 <h3 className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-2">Stack</h3>
                                 <div className="flex flex-wrap gap-2">
@@ -113,15 +121,28 @@ export default async function ProjectLayout({
 
                     {/* Visuals / Info Sidebar */}
                     <div className="space-y-6">
-                        <div className="aspect-video w-full rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-neutral-600">
-                            {/* Placeholder for project image/screenshot */}
-                            <span className="text-sm">Main Project Visual (Placement)</span>
-                        </div>
-                        <div className="aspect-video w-full rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-neutral-600">
-                            {/* Placeholder for architecture diagram */}
-                            <span className="text-sm">System Diagram (Placement)</span>
-                        </div>
+                        {project.visuals?.main && (
+                            <div className="aspect-video w-full rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-neutral-600 overflow-hidden relative">
+                                <Image
+                                    src={project.visuals.main.src}
+                                    alt={project.visuals.main.alt}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        )}
+                        {project.visuals?.diagram && (
+                            <div className="aspect-video w-full rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-neutral-600 overflow-hidden relative">
+                                <Image
+                                    src={project.visuals.diagram.src}
+                                    alt={project.visuals.diagram.alt}
+                                    fill
+                                    className="object-contain p-4"
+                                />
+                            </div>
+                        )}
                     </div>
+
                 </div>
             </Section>
         </div>

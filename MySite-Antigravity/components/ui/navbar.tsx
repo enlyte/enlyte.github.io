@@ -1,11 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
+import { motion, AnimatePresence } from "framer-motion"
+import { Menu, X } from "lucide-react"
 
 export function Navbar() {
     const pathname = usePathname()
+    const [isOpen, setIsOpen] = useState(false)
 
     const links = [
         { href: "/projects", label: "Work" },
@@ -20,11 +24,14 @@ export function Navbar() {
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
                 <Link
                     href="/"
-                    className="font-mono text-lg font-bold tracking-tighter text-neutral-100 hover:text-white transition-colors"
+                    className="font-mono text-xl font-bold tracking-tight text-neutral-100 hover:text-white transition-colors"
+                    onClick={() => setIsOpen(false)}
                 >
-                    STEPHEN MOY
+                    Stephen Moy
+                    {/* &lt;/Stephen Moy&gt; */}
                 </Link>
 
+                {/* Desktop Nav */}
                 <div className="hidden gap-8 md:flex">
                     {links.map(link => (
                         <Link
@@ -42,11 +49,45 @@ export function Navbar() {
                     ))}
                 </div>
 
-                {/* Mobile Toggle Placeholder - can be added later */}
-                <div className="md:hidden text-neutral-500 text-xs font-mono">
-                    MENU
-                </div>
+                {/* Mobile Menu Toggle */}
+                <button
+                    className="md:hidden text-neutral-400 hover:text-white transition-colors p-2"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                </button>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="md:hidden border-b border-white/5 bg-neutral-950/95 backdrop-blur-xl overflow-hidden"
+                    >
+                        <div className="flex flex-col p-6 space-y-4">
+                            {links.map(link => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className={cn(
+                                        "text-lg font-medium transition-colors py-2",
+                                        pathname.startsWith(link.href) && link.href !== "/"
+                                            ? "text-white"
+                                            : "text-neutral-400 hover:text-neutral-200"
+                                    )}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     )
 }

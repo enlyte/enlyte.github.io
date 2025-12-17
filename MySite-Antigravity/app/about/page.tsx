@@ -19,7 +19,7 @@ export default function AboutPage() {
                         I moved into Sales Engineering, learning how to listen to problems and design enterprise solutions.
                         <br /><br />
                         Now, I build the tools myself. I combine that empathy and communication with deep technical skills in
-                        full-stack development, AI pipelines, and infrastructure to ship products that feel evident.
+                        full-stack development, AI pipelines, and infrastructure to ship products that feel intuitive and purposeful.
                     </p>
                 </div>
 

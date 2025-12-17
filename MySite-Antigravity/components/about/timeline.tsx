@@ -40,29 +40,30 @@ function TimelineItem({ year, title, role, description, align = "left" }: Timeli
 
 export function Timeline() {
     const events = [
+
         {
             year: "2021 - Present",
             title: "Nulite / VidCutAI",
             role: "Founder & Lead Developer",
-            description: "Founded a company to solve media automation problems. Architected and shipped VidCutAI, a desktop app using local AI for multicam editing. Managing the full stack: Product, Desktop (Python/Qt), Cloud (Docker/Nginx), and Sales."
+            description: "Founded Nulite to build practical AI-powered media tools. Architected and shipped VidCutAI, a desktop application for automated podcast and multicam editing. Led product direction and built the full stack spanning Python/Qt desktop systems, AI processing pipelines, cloud infrastructure (Docker, Nginx), and customer-facing sales and support."
         },
         {
             year: "2017 - 2020",
             title: "Experian Data Quality",
             role: "Sales Engineer",
-            description: "Bridged the gap between technical teams and enterprise clients. Designed solutions for complex data quality integrations, demonstrating strong communication and systems thinking."
+            description: "Worked at the intersection of engineering and enterprise clients, designing and presenting data quality solutions for complex integration environments. Developed strong communication, system-level thinking, and the ability to translate technical constraints into real business outcomes."
         },
         {
             year: "2013 - 2017",
             title: "Behavior Data Tracker",
             role: "Founder & iOS Developer",
-            description: "Built and launched an iOS app used by special education professionals to track behavior data. My first experience shipping a product from idea to App Store."
+            description: "Designed, built, and launched a native iOS application used by special education professionals to track behavioral data in real time. Owned the product end-to-end, from concept and UX to implementation, deployment, and App Store release."
         },
         {
             year: "2008 - 2013",
             title: "Guild for Human Services",
             role: "Technology Curriculum Manager",
-            description: "Introduced assistive technology and digital independence curriculums. Translating complex tech concepts for human services contexts."
+            description: "Developed and delivered assistive technology and digital independence curricula for individuals with disabilities. Focused on making technology accessible, practical, and empowering in a human services setting."
         }
     ]
 

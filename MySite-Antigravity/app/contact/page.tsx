@@ -7,8 +7,13 @@ import { Send, Mail, Linkedin, Github } from "lucide-react"
 export default function ContactPage() {
     return (
         <div className="pt-20">
-            <Section className="max-w-4xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* 2  Columns for Send Message */}
+            {/* <Section className="max-w-4xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12"> */}
+
+            <Section className="max-w-3xl">
+                <div className="flex flex-col gap-12">
+
                     <div>
                         <h1 className="text-4xl font-bold text-white mb-6">Get in Touch</h1>
                         <p className="text-neutral-400 mb-8 leading-relaxed">
@@ -17,17 +22,17 @@ export default function ContactPage() {
                         </p>
 
                         <div className="space-y-6">
-                            <a href="mailto:hello@stephenmoy.com" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
+                            <a href="mailto:info@stephenmoy.com" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center">
                                     <Mail className="h-5 w-5" />
                                 </div>
                                 <div>
                                     <p className="text-sm font-bold">Email</p>
-                                    <p className="text-sm text-neutral-500">hello@stephenmoy.com</p>
+                                    <p className="text-sm text-neutral-500">info@stephenmoy.com</p>
                                 </div>
                             </a>
 
-                            <a href="https://linkedin.com" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
+                            <a href="https://www.linkedin.com/in/moy21/" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center">
                                     <Linkedin className="h-5 w-5" />
                                 </div>
@@ -37,7 +42,7 @@ export default function ContactPage() {
                                 </div>
                             </a>
 
-                            <a href="https://github.com" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
+                            <a href="https://github.com/enlyte" className="flex items-center gap-4 text-neutral-300 hover:text-white transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center">
                                     <Github className="h-5 w-5" />
                                 </div>
@@ -49,6 +54,7 @@ export default function ContactPage() {
                         </div>
                     </div>
 
+                    {/*                     
                     <Card className="p-8">
                         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                             <div className="grid grid-cols-2 gap-4">
@@ -81,9 +87,9 @@ export default function ContactPage() {
                                 Send Message <Send className="h-4 w-4" />
                             </button>
                         </form>
-                    </Card>
+                    </Card> */}
                 </div>
-            </Section>
-        </div>
+            </Section >
+        </div >
     )
 }
