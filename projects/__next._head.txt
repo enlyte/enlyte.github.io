@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[42922,["/_next/static/chunks/b4ebde795d4770d4.js","/_next/static/chunks/6390ee05214aa4d1.js"],"ViewportBoundary"]
+4:I[42922,["/_next/static/chunks/b4ebde795d4770d4.js","/_next/static/chunks/6390ee05214aa4d1.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[93759,["/_next/static/chunks/b4ebde795d4770d4.js","/_next/static/chunks/6390ee05214aa4d1.js"],"IconMark"]
+0:{"buildId":"xt0-uamHd2Ymyeg3uaE2G","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Projects | Stephen Moy"}],["$","meta","1",{"name":"description","content":"Selected work in AI, Infrastructure, and Product Engineering."}],["$","meta","2",{"property":"og:title","content":"Stephen Moy"}],["$","meta","3",{"property":"og:description","content":"Technical Founder & Systems Builder"}],["$","meta","4",{"property":"og:image","content":"https://stephenmoy.com/og-image.png"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Stephen Moy"}],["$","meta","7",{"name":"twitter:description","content":"Technical Founder & Systems Builder"}],["$","meta","8",{"name":"twitter:image","content":"https://stephenmoy.com/og-image.png"}],["$","link","9",{"rel":"icon","href":"/favicon.ico?favicon.d31ad5de.ico","sizes":"766x766","type":"image/x-icon"}],["$","$L7","10",{}]]
