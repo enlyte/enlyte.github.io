@@ -1,6 +1,6 @@
 import { Section } from "@/components/ui/section"
 import { Card } from "@/components/ui/card"
-import { Music, Heart, Mic2, Hammer, MountainSnow, Layers, DraftingCompass, Video } from "lucide-react"
+import { Music, Heart, Hammer, MountainSnow, Layers, Video } from "lucide-react"
 import Image from "next/image"
 
 
@@ -29,7 +29,7 @@ export default function PersonalPage() {
                             <p className="text-neutral-400 max-w-md">
                                 I care for four sugar gliders, Lego, Cella, Ruby, and Crouton. They are nocturnal marsupials that require specialized care, diet, and enrichment.
                                 <br /><br />
-                                It's a study in patience, routine, and observing subtle behaviors.
+                                It&apos;s a study in patience, routine, and observing subtle behaviors.
                             </p>
                         </div>
                         <div className="mt-8 grid grid-cols-2 gap-4">

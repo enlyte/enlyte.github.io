@@ -46,9 +46,16 @@ npm run build
 ```
 
 This will generate an `out` directory containing the static HTML/CSS/JS files.
+**Note:** The build script automatically creates a `.nojekyll` file in the `out` directory. This is required for GitHub Pages to correctly serve files starting with `_` (like Next.js's `_next` folder).
 
 2. To deploy to GitHub Pages:
    - Ensure the `out` directory contents are what gets served.
    - If using a manual workflow, you can push the contents of `out` to a `gh-pages` branch.
    - Or, simply configure GitHub Pages in your repository settings to serve from the root (or docs) if you commit the build artifacts (not recommended for main branch, but common for quick static sites).
+   
+   **Alternatively**, you can use the automated script:
+   ```bash
+   ./scripts/deploy-gh-pages.sh
+   ```
+   This script handles building, committing to a temporary branch, and force pushing to `gh-pages` for you.
 

@@ -83,7 +83,7 @@ export const projects: Project[] = [
         description:
             "A dedicated on-prem AI compute layer built on top of the homelab infrastructure, designed to run GPU-intensive inference and batch processing workloads for AI-driven products.",
         challenge:
-            "AI products like VidCutAI and Pro Transcribe require consistent, high-throughput GPU compute for transcription, diarization, and language models without the cost or latency of cloud-only solutions.",
+            "AI products like VidCutAI and Transcription Pro require consistent, high-throughput GPU compute for transcription, diarization, and language models without the cost or latency of cloud-only solutions.",
         solution:
             "I built dedicated GPU-backed machines integrated into the homelab network, separating production and testing workloads. These systems expose internal APIs for AI processing and support both local and hybrid (API-assisted) workflows.",
         features: [
@@ -97,8 +97,8 @@ export const projects: Project[] = [
     },
 
     {
-        slug: "pro-transcribe",
-        title: "Pro Transcribe",
+        slug: "transcription-pro",
+        title: "Transcription Pro",
         subtitle: "Structured Multi-Speaker Transcription System",
         category: "Web",
         role: "Full Stack Developer",
@@ -118,11 +118,11 @@ export const projects: Project[] = [
         visuals: {
             main: {
                 src: "/images/transcriptionProVisual.png",
-                alt: "Pro Transcribe dashboard interface",
+                alt: "Transcription Pro dashboard interface",
             },
             diagram: {
                 src: "/images/transcriptionProVisual2.png",
-                alt: "Pro Transcribe architecture diagram",
+                alt: "Transcription Pro architecture diagram",
             },
         },
     },

@@ -16,7 +16,7 @@ export default function ProjectsPage() {
                 <div className="mb-16">
                     <h1 className="text-4xl font-bold text-white mb-4">Selected Work</h1>
                     <p className="text-neutral-400 max-w-2xl">
-                        A collection of products, tools, and systems I've built.
+                        Here’s a collection of what I&apos;ve built. Some are production systems, others are experiments to test limits.
                         Ranging from desktop AI applications to bare-metal infrastructure.
                     </p>
                 </div>

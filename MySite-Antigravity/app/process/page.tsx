@@ -61,7 +61,7 @@ export default function ProcessPage() {
                             <Card className="p-6 bg-neutral-900/50 border-neutral-800">
                                 <h3 className="text-lg font-bold text-white mb-3">Architecture First, Generation Second</h3>
                                 <p className="text-neutral-400 text-sm leading-relaxed">
-                                    Code generation without a clear spec leads to endless "micro-refactoring" loops.
+                                    Code generation without a clear spec leads to endless &quot;micro-refactoring&quot; loops.
                                     I invest heavily in the planning phase, defining schemas, interfaces, and data flows before a single line of code is generated.
                                     This ensures AI outputs are integrated components, not isolated snippets.
                                 </p>

@@ -15,8 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://stephenmoy.com'),
   title: "Stephen Moy | Technical Founder & Engineer",
   description: "Technical Founder and Full-Stack Engineer building AI tools and systems.",
+  openGraph: {
+    title: "Stephen Moy",
+    description: "Technical Founder & Systems Builder",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
